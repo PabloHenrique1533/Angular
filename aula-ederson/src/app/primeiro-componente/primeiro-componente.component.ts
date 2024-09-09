@@ -1,14 +1,17 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-primeiro-componente',
   standalone: true,
   imports: [],
   templateUrl: './primeiro-componente.component.html',
-  styleUrl: './primeiro-componente.component.css',
-  template: '<h1>meu primeiro componente</h1>'
+  styleUrls: ['./primeiro-componente.component.css']
 })
 export class PrimeiroComponenteComponent {
-nome: string = 'pablo';
-idade: string = '19';
+  constructor(private router: Router) {}
+
+  navegandoNoComponente(route: string) {
+    this.router.navigate([`/${route}`]);
+  }
 }

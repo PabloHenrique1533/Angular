@@ -1,110 +1,44 @@
 /*invasao77*/
-.p{
+.p,.p2,.p3,.p4{
     text-align: center;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 50px 0; /* Ajuste a margem superior e inferior */
+    margin: 50px 0; 
     opacity: 1;
     transition: opacity 0.3s ease;
 }
 
-.p:hover{
+.p:hover,.p2:hover,.p3:hover,.p4:hover{
     opacity: 0.5; 
 }
 
-.img{
+.invasao77,.Democracia,.gavioes,.japao{
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 500px;
+    margin: 0 auto; 
+}
+
+.invasao77{
     background-image: url(/invasao77.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: transform 0.3s ease;
-    width: 100%; /* Ajuste a largura para preencher o container */
-    height: 500px;
-    margin: 0 auto; /* Centralize a imagem */
 }
 
-.img:hover{
-    transform: scale(1.1);
-}
-
-/*democracia*/
-.p2{
-    opacity: 1;
-    transition: opacity 0.3s ease;
-    text-align: center;
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 50px 0; /* Ajuste a margem superior e inferior */
-}
-
-.p2:hover{
-    opacity: 0.5; 
-}
-
-.img2{
+.Democracia{
     background-image: url(/democracia.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: transform 0.3s ease;
-    width: 100%; /* Ajuste a largura para preencher o container */
-    height: 500px;
-    margin: 0 auto; /* Centralize a imagem */
 }
 
-.img2:hover{
-    transform: scale(1.1);
-}
-
-/*invasao2012*/
-.p3{
-    opacity: 1;
-    transition: opacity 0.3s ease;
-    text-align: center;
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 50px 0; /* Ajuste a margem superior e inferior */
-}
-
-.p3:hover{
-    opacity: 0.5; 
-}
-
-.img3{
+.japao{
     background-image: url(/invasao2012.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: transform 0.3s ease;
-    width: 100%; /* Ajuste a largura para preencher o container */
-    height: 450px;
-    margin: 0 auto; /* Centralize a imagem */
 }
 
-.img3:hover{
-    transform: scale(1.1);
-}
-
-.p4{
-    opacity: 1;
-    transition: opacity 0.3s ease;
-    text-align: center;
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 50px 0; /* Ajuste a margem superior e inferior */
-}
-
-.p4:hover{
-    opacity: 0.5; 
-}
-
-.img4{
+.gavioes{
     background-image: url(/gavioes.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: transform 0.3s ease;
-    width: 100%; /* Ajuste a largura para preencher o container */
-    height: 450px;
-    margin: 0 auto; /* Centralize a imagem */
 }
 
-.img4:hover{
+.invasao77:hover,.Democracia:hover,.gavioes:hover,.japao:hover{
     transform: scale(1.1);
 }
+
+

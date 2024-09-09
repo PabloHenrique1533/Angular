@@ -1,0 +1,49 @@
+Angular
+
+Router:
+o angular usa o router para navegar entre diferentes componentes da aplicação.
+ao usar o Router no construtor do componente, você ganha acesso a motédos que permiitem realizar navegações programáticas.
+
+navegação por rotas no componentes:
+ex: export const appRoutes: Routes =
+[
+	{ path: ' ', component: PrimeiroComponentecomponent},
+	{path:  'segundo-componente ', component: 		SegundoComponentecomponent}	
+]
+
+essa função funciona como um vetores de rota de navegação, o patch (patch: ''), serve para vc coloca o componente , sem nada nas apas eo componente raiz-padrão, pra navegar em outro e so colocar o nome do seu componente.
+
+
+
+
+
+//<p class="p">Relembre a História da Invasão Corinthiana no Ano 77!</p>
+<div class="invasao77" (click)="navegandoNoComponente('segundo-componente')"></div>
+
+<p class="p2">Conheça a História da Democracia Corinthiana, onde ajudou a democratizar o clube e também a lutar contra a ditadura militar!</p>
+<div class="Democracia" (click)="navegandoNoComponente('terceiro-componente')"></div>
+
+<p class="p3">Relembre como foi a invasão Corinthiana a Tóquio! Capital do Japão.</p>
+<div class="japao" (click)="navegandoNoComponente('quarto-componente')"></div>
+
+<p class="p4">Conheça a Origem da Maior Torcida Organizada do Brasil: a Gaviões Da Fiel</p>
+<div class="gavioes" (click)="navegandoNoComponente('quinto-componente')"></div>
+
+
+//import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
+@Component({
+  selector: 'app-primeiro-componente',
+  standalone: true,
+  imports: [],
+  templateUrl: './primeiro-componente.component.html',
+  styleUrls: ['./primeiro-componente.component.css']
+})
+export class PrimeiroComponenteComponent {
+  constructor(private router: Router) {}
+
+  navegandoNoComponente(route: string) {
+    this.router.navigate([`/${route}`]);
+  }
+}
