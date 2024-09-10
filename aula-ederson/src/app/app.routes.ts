@@ -13,7 +13,8 @@ export const routes: Routes = [
     {path: 'segundo-componente', component: SegundoComponenteComponent},
     {path:'terceiro-componente', component: TerceiroComponenteComponent},
     {path: 'quarto-componente', component: QuartoComponenteComponent},
-    {path: 'quinto-componente', component: QuintoComponenteComponent}
+    {path: 'quinto-componente', component: QuintoComponenteComponent},
+    {path: '', redirectTo: '/primeiro-componente', pathMatch: 'full'}
 ];
 
 @NgModule({
